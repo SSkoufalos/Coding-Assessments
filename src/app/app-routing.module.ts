@@ -6,7 +6,29 @@ import { EducationComponent } from './education/education.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterests.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/bio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'bio',
+    component: BioComponent,
+  },
+  {
+    path: 'education',
+    component: EducationComponent,
+  },
+  {
+    path: 'examples',
+    component: ExamplesComponent,
+  },
+  {
+    path: 'hobbiesninterests',
+    component: HobbiesninterestsComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

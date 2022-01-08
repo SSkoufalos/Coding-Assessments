@@ -10,6 +10,15 @@
   }
 </style>
 
-<body id="background">
+<header id="background">
   <h1 class="headertext">Hello World! If you can read this, it's worked!</h1>
-</body>
+</header>
+
+<nav>
+  <button nz-button nzType="primary" routerLink="/bio" routerLinkActive="active">Bio</button>
+  <a routerLink="/education" routerLinkActive="active">Education</a>
+  <a routerLink="/examples" routerLinkActive="active">Examples</a>
+  <a routerLink="/hobbiesninterests" routerLinkActive="active">Hobbies and Interests</a>
+</nav>
+
+<router-outlet></router-outlet>

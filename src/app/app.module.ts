@@ -1,3 +1,5 @@
+import { NzButtonModule } from 'ng-zorro-antd/button';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,6 +20,7 @@ import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterest
   ],
   imports: [
     BrowserModule,
+    NzButtonModule,
     AppRoutingModule
   ],
   providers: [],

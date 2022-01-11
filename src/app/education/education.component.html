@@ -1,16 +1,16 @@
 <body id="background">
-
+<br>
 <p class="headertext">Education</p>
 <br>
 <p class="headertext">High School</p>
-<ul class="listtext" *ngFor = "let x of highschools">
+<ul *ngFor = "let x of highschools">
     <li>{{ x.name }}</li>
     <li>{{ x.years }}</li>
     <li>{{ x.degree }}</li>
 </ul>
 <p class="headertext">College</p>
 <br>
-<ul class="listtext" *ngFor = "let x of colleges">
+<ul *ngFor = "let x of colleges">
     <li>{{ x.name }}</li>
     <li>{{ x.years }}</li>
     <li>{{ x.degree }}</li>

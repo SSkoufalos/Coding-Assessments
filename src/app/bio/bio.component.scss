@@ -4,6 +4,19 @@
 
   .headertext {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align:center;
     color:white;
+    text-align: center;
   }
+
+  .centeralign {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-align: center;
+    flex-direction: column;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}

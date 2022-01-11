@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 declare var require: any;
 
-var data = require('../../assets/example.JSON'); //Ask Andy about this as well. Is this in the right place?
+var data = require('../../assets/example.JSON'); //The ../ is for each level of the folders. This requires two.
 
 @Component({
   selector: 'app-bio',
@@ -17,6 +17,7 @@ export class BioComponent implements OnInit {
     name: 'Steve Skoufalos',
     age: 33,
     gender: 'Male',
+    location: 'Haddonfield, NJ'
   }
   ];
 
@@ -33,4 +34,5 @@ export interface Information {
   name: string;
   age: number;
   gender: string;
+  location: string;
 }

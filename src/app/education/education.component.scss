@@ -8,10 +8,11 @@
     color:white;
   }
 
-  .listtext {
+  ul {
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color:white;
       text-align: center;
       list-style-position: inside;
-      display: inline-block;
+      list-style-type: none;
+      padding-left: 0;
   }

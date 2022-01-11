@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var require: any;
+
+var data = require('../assets/example.JSON');
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +12,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myresume';
+  constructor() {
+    console.log(JSON.stringify(data))
+  }
 }

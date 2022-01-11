@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HobbiesninterestsComponent implements OnInit {
 
+//Gonna put some images and lists here. Probably.
+
   constructor() { }
 
   ngOnInit(): void {

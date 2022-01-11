@@ -1,1 +1,20 @@
-<p>education works!</p>
+<body id="background">
+
+<p class="headertext">Education</p>
+<br>
+<p class="headertext">High School</p>
+<ul class="headertext" *ngFor = "let x of highschools">
+    <li>{{ x.name }}</li>
+    <li>{{ x.years }}</li>
+    <li>{{ x.degree }}</li>
+<br>    
+</ul>
+<p class="headertext">College</p>
+<br>
+<ul class="headertext" *ngFor = "let x of colleges">
+    <li>{{ x.name }}</li>
+    <li>{{ x.years }}</li>
+    <li>{{ x.degree }}</li>
+    <li>{{ x.major }}</li>  
+</ul>
+</body>

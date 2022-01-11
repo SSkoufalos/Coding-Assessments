@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+
+declare var require: any;
+
+var data = require('../../assets/example.JSON');
 
 @Component({
   selector: 'app-education',
@@ -6,10 +13,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
+  name = 'Angular';
 
-  constructor() { }
+  highschools: Education[] = [];
+  colleges: Education[] = [];
 
-  ngOnInit(): void {
+  constructor() {
+    this.highschools = data.education.highschools
+    this.colleges = data.education.colleges
   }
 
+  ngOnInit(): void {}
+
+}
+
+export interface Education {
+  name: string;
+  years: number;
+  degree: string;
+  major: string;
 }

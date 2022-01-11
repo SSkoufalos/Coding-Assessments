@@ -1,20 +1,27 @@
 <style>
-  #background {
+  header {
     background-color: black;
+    padding: 10px;
   }
 
   .headertext {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:center;
     color:white;
+    margin: 0;
+  }
+
+  nav {
+    background-color: black;
+    padding: 15px;
   }
 </style>
 
-<header id="background">
+<header>
   <h1 class="headertext">Stephen Skoufalos</h1>
 </header>
 
-<nav id="background">
+<nav>
   <button nz-button nzType="primary" routerLink="/bio" routerLinkActive="active">Bio</button>
   <button nz-button nzType="primary" routerLink="/education" routerLinkActive="active">Education</button>
   <button nz-button nzType="primary" routerLink="/examples" routerLinkActive="active">Examples</button>

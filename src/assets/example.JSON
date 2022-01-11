@@ -21,21 +21,21 @@
     "highschools":
     [{ 
       "name": "Haddonfield Memorial High School",
-      "years": 4,
+      "years": 2007,
       "degree": "High School Diploma"
     }],
 
     "colleges":
     [{
       "name": "Burlington County College",
-      "years": 2,
+      "years": 2010,
       "degree": "Associates",
       "major": "Liberal Arts"
     },
   
     {
       "name": "Rutgers University Camden",
-      "years": 2,
+      "years": 2012,
       "degree": "Bachelors",
       "major": "Graphic Design"
     }]

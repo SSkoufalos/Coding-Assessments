@@ -19,8 +19,8 @@ export class EducationComponent implements OnInit {
   colleges: Education[] = [];
 
   constructor() {
-    this.highschools = data.education.highschools
-    this.colleges = data.education.colleges
+    this.highschools = data.education.highschools //These sections link up to the corresponding strings in the JSON file.
+    this.colleges = data.education.colleges //Bear in mind that strings in JSON have double quotes.
   }
 
   ngOnInit(): void {}

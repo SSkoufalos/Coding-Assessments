@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var require: any;
+
+var data = require('../../assets/example.JSON');
+
 @Component({
   selector: 'app-hobbiesninterests',
   templateUrl: './hobbiesninterests.component.html',

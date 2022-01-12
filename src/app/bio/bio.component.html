@@ -2,28 +2,29 @@
 <br>
 <div class="centeralign">
 <h2 class="headertext">"I'm just a simple man, trying to make my way in the world."</h2>
-<br><br>
+<br>
 <h2 class="headertext">General Information</h2>
-<ul>
-    <li>Stephen Skoufalos</li>
-    <li>Haddonfield, NJ</li>
-    <li>08033</li>
-    <li>stephenskouf@gmail.com</li>
+<ul *ngFor = "let x of bio">
+    <li>{{ x.name }}</li>
+    <li>{{ x.city }}</li>
+    <li>{{ x.zip }}</li>
+    <li>{{ x.email }}</li>
 </ul>
 <br>
 <h2 class="headertext">Coding Background</h2>
-<ul>
-    <li>HTML Experience: 3 months</li>
-    <li>CSS Experience: 2 months</li>
-    <li>JavaScript Experience: 1 month</li>
+<ul *ngFor = "let x of codeExperience">
+    <li>{{ x.html }}</li>
+    <li>{{ x.css }}</li>
+    <li>{{ x.javascript }}</li>
 </ul>
 <br>
-<h2 class="headertext">Coding Goals</h2>
-<ul>
-    <li>To become more proficient with as many forms of coding as possible.</li>
-    <li>To master HTML, CSS, JavaScript and Angular.</li>
-    <li>To learn more about developing apps and other useful programs to help people.</li>
-    <li>To develop applications to assist retail workers and beyond.</li>
+<h2 class="headertext">Work Experience</h2>
+<ul *ngFor = "let x of workExperience">
+    <li>{{ x.role }}</li>
+    <li>{{ x.company }}</li>
+    <li>{{ x.startDate }}</li>
+    <li>{{ x.endDate }}</li>
+    <li>{{ x.description }}</li>
 </ul>
 </div>
 </body>

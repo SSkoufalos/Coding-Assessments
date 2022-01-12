@@ -1,1 +1,35 @@
-<p>hobbiesninterests works!</p>
+<body id="background">
+<br>
+<h2 class="headertext">Hobbies and Coding Goals</h2>
+
+<div class="centeralign">
+    <br>
+    <h2 class="headertext">Coding Goals</h2>
+    <ul *ngFor = "let x of codingGoals">
+        <li>{{ x.firstgoal }}</li>
+        <li>{{ x.secondgoal }}</li>
+        <li>{{ x.thirdgoal }}</li>
+        <li>{{ x.fourthgoal }}</li>
+    </ul>
+    <br>
+    <h2 class="headertext">Favorite Games</h2>
+    <ul *ngFor = "let x of favoriteGames">
+        <li>{{ x.rpg }}</li>
+        <li>{{ x.strategy }}</li>
+        <li>{{ x.sidescroller }}</li>
+        <li>{{ x.beatemup }}</li>
+        <li>{{ x.topdown }}</li>
+        <li>{{ x.flightsim }}</li>
+        <li>{{ x.arcade }}</li>
+    </ul>
+    <br>
+    <h2 class="headertext">Other Hobbies</h2>
+    <ul *ngFor = "let x of otherHobbies">
+        <li>{{ x.mainhobby }}</li>
+        <li>{{ x.secondhobby }}</li>
+        <li>{{ x.thirdhobby }}</li>
+        <li>{{ x.fourthhobby }}</li>
+        <li>{{ x.fifthhobby }}</li>
+    </ul>
+    </div>
+</body>

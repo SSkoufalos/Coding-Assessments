@@ -16,11 +16,13 @@ export class BioComponent implements OnInit {
   name = 'Angular';
 
   bio: Information[] = [];
-  willingToRelocate: Information[] = [];
+  codeExperience: Information[] = [];
   workExperience: Information[] = [];
 
   constructor() {
-    console.log(JSON.stringify(data))
+    this.bio = data.bio
+    this.codeExperience = data.codeExperience
+    this.workExperience = data.workExperience
   }
 
   ngOnInit(): void {}
@@ -29,7 +31,15 @@ export class BioComponent implements OnInit {
 
 export interface Information {
   name: string;
-  location: string;
-  zipcode: string;
+  city: string;
+  zip: string;
   email: string;
+  html: string;
+  css: string;
+  javascript: string;
+  role: string;
+  company: string;
+  startDate: string;
+  endDate: string;
+  description: string;
 }

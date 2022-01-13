@@ -12,6 +12,7 @@ var data = require('../assets/example.JSON');
 })
 export class AppComponent {
   title = 'myresume';
+  todaysDate = Date.now();
   constructor() {
     console.log(JSON.stringify(data))
   }

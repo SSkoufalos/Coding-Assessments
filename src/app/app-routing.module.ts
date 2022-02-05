@@ -5,6 +5,7 @@ import { BioComponent } from './bio/bio.component';
 import { EducationComponent } from './education/education.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterests.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
     path: 'hobbiesninterests',
     component: HobbiesninterestsComponent,
   },
+  {
+    path: 'pokemon',
+    component: PokemonComponent,
+  }
 ];
 
 @NgModule({

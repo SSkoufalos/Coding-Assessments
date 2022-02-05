@@ -9,6 +9,7 @@ import { BioComponent } from './bio/bio.component';
 import { EducationComponent } from './education/education.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterests.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterest
     BioComponent,
     EducationComponent,
     ExamplesComponent,
-    HobbiesninterestsComponent
+    HobbiesninterestsComponent,
+    PokemonComponent,
   ],
   imports: [
     BrowserModule,

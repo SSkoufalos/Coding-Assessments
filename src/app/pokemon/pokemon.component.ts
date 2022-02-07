@@ -2,11 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-pokemon',
   templateUrl: './pokemon.component.html',
-  styleUrls: ['./pokemon.component.css'],
+  styleUrls: ['./pokemon.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class PokemonComponent implements OnInit {
   OurPokemon: any = {};
 
   pokemonUrl = 'https://pokeapi.co/api/v2/pokemon/porygon';

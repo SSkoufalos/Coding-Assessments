@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pokemon.component.scss'],
 })
 export class PokemonComponent implements OnInit {
+name = 'Angular';
+
   OurPokemon: any = {};
 
   pokemonUrl = 'https://pokeapi.co/api/v2/pokemon/porygon';

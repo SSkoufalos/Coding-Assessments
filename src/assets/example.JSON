@@ -70,5 +70,14 @@
       "thirdhobby": "Military History",
       "fourthhobby": "Japanese Culture",
       "fifthhobby": "Video Games"
+    }],
+
+"favoritePokemon": [{
+    "name": "Porygon",
+    "height": "2 feet 7 inches",
+    "weight": "80.5 lbs",
+    "firstability": "Trace",
+    "secondability": "Download",
+    "hiddenability": "Analytic"
     }]
 }

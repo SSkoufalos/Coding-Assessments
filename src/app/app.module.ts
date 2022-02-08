@@ -10,6 +10,7 @@ import { EducationComponent } from './education/education.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { HobbiesninterestsComponent } from './hobbiesninterests/hobbiesninterests.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PokemonComponent } from './pokemon/pokemon.component';
   imports: [
     BrowserModule,
     NzButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

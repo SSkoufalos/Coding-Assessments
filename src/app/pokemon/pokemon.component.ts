@@ -1,6 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
+declare var require: any;
+
+var data = require('../../assets/example.JSON');
+
 @Component({
   selector: 'app-pokemon',
   templateUrl: './pokemon.component.html',
@@ -15,9 +19,5 @@ name = 'Angular';
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-    this.http.get(this.pokemonUrl).subscribe((data) => {
-      this.OurPokemon = data;
-    });
-  }
+  ngOnInit(): void {}
 }

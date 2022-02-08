@@ -19,5 +19,9 @@ name = 'Angular';
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.http.get(this.pokemonUrl).subscribe((data) => {
+      this.OurPokemon = data;
+    });
+  }
 }

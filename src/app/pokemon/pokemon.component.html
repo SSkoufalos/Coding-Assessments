@@ -41,7 +41,8 @@
     creations in cyberspace.
   </p>
   <div *ngFor="let ability of OurPokemon.abilities">
+    <!--The 'ability' variable here can be named anything. This is going to display everything under the "abilities" heading.-->
     {{ ability.ability.name }}
+    <!--This section here uses the variable 'ability' that we put in before, and the second ability will access the "ability" section in the API, then the names of the abilities under "name". -->
   </div>
 </div>
-

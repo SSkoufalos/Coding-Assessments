@@ -1,5 +1,10 @@
-import { HttpClient } from '@angular/common/http'; //Ensure these are properly imported under the app.module.ts file.
-import { Component, OnInit } from '@angular/core';
+import {
+  HttpClient
+} from '@angular/common/http'; //Ensure these are properly imported under the app.module.ts file.
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 declare var require: any;
 
@@ -13,22 +18,19 @@ var data = require('../../assets/example.JSON');
 export class PokemonComponent implements OnInit {
   name = 'Angular';
 
-  /*favoritePokemon: Pokemon[] = [];
-
-  constructor() {
-    this.favoritePokemon = data.favoritePokemon
-  }*/
-
-
   OurPokemon: any = {};
 
   pokemonUrl = 'https://pokeapi.co/api/v2/pokemon/porygon';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.http.get(this.pokemonUrl).subscribe((data) => {
-      this.OurPokemon = data;
-    });
+        this.OurPokemon = data;
+        console.log(JSON.stringify(this.OurPokemon));
+      }, (err) => {},
+      () => console.log('finished')
+    );
+
   }
 }
